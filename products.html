@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Gallery</title>
+
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="products.css">
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myDIV *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+
+</head>
+<body>
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- Nav -->
+    <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+        <div class="row ml-auto">
+            <div class="col ">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button> pr-5 <button class="clear-cart btn btn-danger">Clear Cart</button></div>
+        </div>
+    </nav>
+
+    <div class="form-search">
+    <input id="myInput" type="search" class="search-item" placeholder="Search..">
+  </div>
+<!-- Main -->
+<div class="container mb-5 mt-5"  id="myDIV">
+    <div class="row" >
+      <div class="col -sm-4 py-5 py-sm-5">
+        <div class="card" style="width: 20rem;" >
+  <img class="card-img-top" src="images/01.jpg" alt="Card image cap" >
+  <div class="card-block" >
+    <h2 class="card-title">NIKE</h2>
+    <h4 class="card-title">W-B-R Trio</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+    <p class="card-text">Price: $50</p>
+    <a href="#" data-name="W-B-R" data-price="50" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col-sm-4 py-5 py-sm-5" >
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/02.jpg" alt="Card image cap">
+  <div class="card-block" >
+    <h2 class="card-title">NIKE</h2>
+    <h4 class="card-title">Airmax Silva</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+    <p class="card-text">Price: $60</p>
+    <a href="#" data-name="AR-Silva" data-price="60" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col-sm-4 py-5 py-sm-5" >
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/03.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h2 class="card-title">NIKE</h2>
+    <h4 class="card-title">High Top White</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+    <p class="card-text">Price: $70</p>
+    <a href="#" data-name="H-T-White" data-price="70" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container mb-5 mt-5"  id="myDIV">
+    <div class="row">
+      <div class="col -sm-4 py-5 py-sm-5">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/22.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h2 class="card-title">NIKE</h2>
+    <h4 class="card-title">Yellow Mustard</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+    <p class="card-text">Price: $80</p>
+    <a href="#" data-name="Y-Mustard" data-price="80" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col-sm-4 py-5 py-sm-5" >
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/23.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h2 class="card-title">NIKE</h2>
+    <h4 class="card-title">Cherry Mercury</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+    <p class="card-text">Price: $90</p>
+    <a href="#" data-name="C-Mercury" data-price="90" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col-sm-4 py-5 py-sm-5" >
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/21.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h2 class="card-title">NIKE</h2>
+    <h4 class="card-title">Pink Bloom</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+    <p class="card-text">Price: $100</p>
+    <a href="#" data-name="P-Bloom" data-price="100" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+    </div>
+</div>
+
+  
+ <!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+        
+          
+          <script>
+            function loadDoc() {
+              var xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                  document.getElementById("demo").innerHTML =
+                  this.responseText;
+                }
+              };
+              xhttp.open("GET", "ajax_info.txt", true);
+              xhttp.send();
+            }
+            </script>
+
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <div id="demo">
+          <h4>Click on Order now to Place your Order !!</h4>
+          </div>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" onclick="loadDoc()" class="btn btn-primary">Order now</button>
+        <br>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+
+
+<script src="products.js"></script>
+
+</body>
+</html>

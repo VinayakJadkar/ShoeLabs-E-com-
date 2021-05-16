@@ -1,0 +1,17 @@
+body {
+    padding-top: 80px;
+  }
+  
+  .show-cart li {
+    display: flex;
+  }
+ 
+ .form-search{
+   width: 640px;
+   margin: 20px auto;
+ }
+
+ .search-item{
+   width:  90%;
+   height: 35px;
+ }
